@@ -1,5 +1,5 @@
 .should {
-  padding: 60px 0 60px;
+  padding: 30px 0 60px;
 
   .container {
     display: flex;
@@ -106,7 +106,7 @@
 
 @media (max-width: 425px) {
   .should {
-    padding: 72px 0 48px;
+    padding-bottom: 30px;
 
     &__subtitle {
       font-size: 14px;
@@ -126,8 +126,8 @@
     }
 
     &-list__icon {
-      flex: 0 0 42px;
-      height: 42px;
+      flex: 0 0 48px;
+      height: 48px;
 
       margin-right: 18px;
     }
@@ -137,6 +137,12 @@
       line-height: 24px;
 
       margin-top: 4px;
+    }
+
+    &-bottom {
+      font-size: 17px;
+      color: rgba(61,70,87,0.60);
+      line-height: 24px;
     }
   }
 }

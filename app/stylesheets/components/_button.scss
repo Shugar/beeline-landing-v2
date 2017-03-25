@@ -20,9 +20,15 @@
 
 @media (max-width: 768px) {
   .c__button {
-    font-size: 16px;
-    padding-left: 0;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .c__button {
+    font-size: 14px;
     padding-right: 0;
+    padding-left: 0;
     width: 100%;
   }
 }
