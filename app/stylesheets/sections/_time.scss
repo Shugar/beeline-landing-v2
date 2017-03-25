@@ -1,0 +1,157 @@
+.time {
+  padding: 110px 0 60px;
+
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 21px;
+    color: rgba(51,51,51,0.50);
+    line-height: 30px;
+
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  &-list {
+    margin-top: 60px;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  &-item {
+    flex: 0 0 30%;
+    text-align: center;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  &-info {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  &-item__title {
+    margin-top: 23px;
+
+    font-weight: bold;
+    font-size: 17px;
+    color: #000000;
+
+    width: 80%;
+  }
+
+  &-item__text {
+    margin-top: 5px;
+    font-size: 17px;
+    color: #3E4757;
+    line-height: 22px;
+  }
+
+  &-item__icon {
+    height: 138px;
+    width: 138px;
+    border-radius: 100px;
+  }
+
+  &-item--12 .time-item__icon {
+    background: url('../images/point-12.png') no-repeat center center / contain;
+  }
+
+  &-item--13 .time-item__icon {
+    background: url('../images/point-13.png') no-repeat center center / contain;
+    box-shadow: 0px 0px 30px 5px #ffe100, 0px 0px 30px 5px #F7A700;
+  }
+
+  &-item--14 .time-item__icon {
+    background: url('../images/point-14.png') no-repeat center center / contain;
+  }
+
+  &__button {
+    margin-top: 90px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .time {
+    padding-bottom: 0;
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    &-list {
+      display: block;
+      margin-top: 0;
+    }
+
+    &-item {
+      margin-top: 50px;
+    }
+
+    .c__button {
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .time {
+    padding: 72px 0 48px;
+
+    &__subtitle {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &-item {
+      flex-flow: row nowrap;
+      align-items: flex-start;
+
+      margin-top: 42px;
+    }
+
+    &-item--13 .time-item__icon {
+      box-shadow: 0px 0px 15px 0px #ffe100, 0px 0px 15px 0px #F7A700
+    }
+
+    &-info {
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    &-item__icon {
+      flex: 0 0 42px;
+      height: 42px;
+
+      margin-right: 18px;
+    }
+
+    &-item__title {
+      font-size: 17px;
+      line-height: 24px;
+
+      margin-top: 0;
+    }
+
+    &-item__text {
+      font-size: 17px;
+      line-height: 24px;
+
+      margin-top: 4px;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.head {
+  background: url('../images/bg.jpg') no-repeat center center / cover;
+  min-height: 558px;
+  padding: 80px 0;
+
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  &__logo {
+    background: url('../images/logo.png') no-repeat center center / contain;
+    width: 240px;
+    height: 75px;
+  }
+
+  &__title {
+    margin-top: 25px;
+    font-size: 42px;
+    color: #FFFFFF;
+    line-height: 48px;
+  }
+
+  &__title span {
+    margin-top: 12px;
+    font-weight: bold;
+  }
+
+  &__subtitle {
+    margin-top: 36px;
+    font-size: 21px;
+    color: #FFFFFF;
+    line-height: 30px;
+  }
+
+  &__button {
+    margin-top: 48px;
+  }
+
+  &__more {
+    margin-top: 25px;
+    display: inline-block;
+    opacity: 0.8;
+    font-size: 17px;
+    color: #FFFFFF;
+    line-height: 17px;
+    border-bottom: 1px #FFFFFF solid;
+  }
+}
+
+@media (max-width: 768px) {
+  .head {
+    &__title {
+      font-size: 30px;
+      line-height: 42px;
+    }
+
+    &__title span {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    &__subtitle {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .head {
+    padding: 18px 0 40px;
+    min-height: initial;
+
+    &__logo {
+      height: 38px;
+      width: 122px;
+    }
+
+    &__title {
+      font-size: 21px;
+      line-height: 30px;
+
+      margin-top: 42px;
+    }
+
+    &__title span {
+      text-align: center;
+      font-size: 30px;
+      line-height: 36px;
+      display: block;
+
+      margin-top: 6px;
+    }
+
+    &__subtitle {
+      font-size: 17px;
+      line-height: 24px;
+
+      margin-top: 36px;
+    }
+
+    &__more {
+      font-size: 17px;
+      margin-top: 30px;
+    }
+  }
+}

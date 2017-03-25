@@ -1,0 +1,153 @@
+.points {
+  padding: 90px 0;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &-list {
+    margin-bottom: 90px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--noBotton {
+      margin-bottom: 0;
+    }
+  }
+
+  &-item {
+    margin-top: 43px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    flex: 0 0 26%;
+
+    margin-right: 11%;
+
+    &:nth-child(3n),
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &-item__icon {
+    height: 138px;
+    width: 138px;
+    border-radius: 100px;
+  }
+
+  &-item__text {
+    text-align: center;
+
+    margin-top: 17px;
+    font-size: 17px;
+    color: #3E4757;
+    line-height: 24px;
+  }
+
+  &-item--1 .points-item__icon {
+    background: url('../images/point-1.png') no-repeat center center / contain;
+  }
+
+  &-item--2 .points-item__icon {
+    background: url('../images/point-2.png') no-repeat center center / contain;
+  }
+
+  &-item--3 .points-item__icon {
+    background: url('../images/point-3.png') no-repeat center center / contain;
+  }
+
+  &-item--4 .points-item__icon {
+    background: url('../images/point-4.png') no-repeat center center / contain;
+  }
+
+  &-item--5 .points-item__icon {
+    background: url('../images/point-5.png') no-repeat center center / contain;
+  }
+
+  &-item--6 .points-item__icon {
+    background: url('../images/point-6.png') no-repeat center center / contain;
+  }
+
+  &-item--7 .points-item__icon {
+    background: url('../images/point-7.png') no-repeat center center / contain;
+  }
+
+  &-item--8 .points-item__icon {
+    background: url('../images/point-8.png') no-repeat center center / contain;
+  }
+
+  &-item--9 .points-item__icon {
+    background: url('../images/point-9.png') no-repeat center center / contain;
+  }
+
+  &-item--10 .points-item__icon {
+    background: url('../images/point-10.png') no-repeat center center / contain;
+  }
+
+  &-item--11 .points-item__icon {
+    background: url('../images/point-11.png') no-repeat center center / contain;
+  }
+
+  &-item--15 .points-item__icon {
+    background: url('../images/point-15.png') no-repeat center center / contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .points {
+    padding: 50px 0;
+
+    &-list {
+      display: block;
+    }
+
+    &-item {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .points {
+    padding: 60px 0 78px;
+
+    &-item__text {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    &-list {
+      margin-bottom: 78px;
+    }
+
+    &-list--2 {
+      .points-item {
+        margin-top: 46px;
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+      }
+
+      .points-item__icon {
+        height: 48px;
+        flex: 0 0 48px;
+
+        margin-right: 18px;
+      }
+
+      .points-item__text {
+        text-align: left;
+        margin-top: 0;
+      }
+    }
+  }
+}
